@@ -1,0 +1,541 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+/**
+ * Remove anchor tex-decoration
+ */
+a {
+  text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */
+ol,
+ul {
+  list-style: none;
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+em,
+img,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+footer,
+header,
+nav,
+section,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #222222;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* Estilos Gerais */
+
+.title {
+  margin-bottom: 40px;
+  color: #FFF;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .05em;
+  text-transform: lowercase;
+}
+
+.title.blue {
+  color: #0F152C;
+}
+
+.title span {
+  color: #FF6868;
+  font-weight: bold;
+}
+
+/* Header */
+.menu-bg {
+  width: 100%;
+  height: auto;
+  background: #8892BF;
+  padding: 10px 0;
+}
+
+.menu-logo {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.menu-logo img {
+  width: 100px;
+  height: 70px;
+}
+
+.nav-bar {
+  text-align: right;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.nav-bar ul li:nth-child(1),
+.nav-bar ul li:nth-child(2),
+.nav-bar ul li:nth-child(3) {
+  padding-right: 8px;
+  border-right: 2px solid #3B3756;
+}
+
+.nav-bar ul li a {
+  color: #FFF;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.25em;
+  letter-spacing: .1em;
+  line-height: 25px;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+  color: #FF6868;
+  transition: color .4s ease-out;
+}
+
+.search-form {
+  display: block;
+  margin-top: 0;
+  text-align: right;
+}
+
+.search-form input {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  border: 2px solid #3B3756;
+  border-radius: 4px;
+}
+
+.search-form input::placeholder {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: lightgray;
+}
+
+.search-form button {
+  background: #3B3756;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+.search-form button:hover {
+  background: #FF6868;
+  transition: .4s all ease-out;
+}
+
+/* Menu Responsivo */
+@media only screen and (max-width: 767px) {
+  .menu-logo {
+    text-align: center;
+  }
+
+  .nav-bar ul li {
+    margin: 5px 5px 0 0;
+  }
+
+  .nav-bar ul li:nth-child(1),
+  .nav-bar ul li:nth-child(2),
+  .nav-bar ul li:nth-child(3) {
+    border: none;
+    padding: 0;
+  }
+
+  .nav-bar ul li a {
+    padding: 10px;
+    text-align: center;
+    border: 4px solid #3B3756;
+    width: 137px;
+    float: left;
+  }
+
+  .search-form {
+    text-align: center;
+  }
+}
+
+/* Fim do Header */
+/* Intro */
+.intro-bg {
+  width: 100%;
+  height: 540px;
+  background: url(../img/intro-bg.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.intro-description {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-description h1 {
+  color: white;
+  font-family: 'Francois One', sans-serif;
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
+
+.intro-description h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 8px;
+  background-color: #FFF;
+  margin: 10px auto 20px auto;
+}
+
+.intro-description p {
+  color: #FF6868;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5em;
+}
+
+.button a {
+  display: inline-block;
+  margin-top: 60px;
+  padding: 10px 20px;
+  border: 4px solid #8892BF;
+  text-transform: uppercase;
+  color: #8892BF;
+  font-family: 'Francois One', sans-serif;
+  letter-spacing: .2em;
+}
+
+.button a:hover {
+  border-color: white;
+  color: white;
+  transition: all .4s ease-out;
+}
+
+/* Intro responsivo */
+@media only screen and (max-width: 767px) {
+  .intro-bg {
+    height: 640px;
+    padding-top: 100px;
+  }
+
+  .intro-description h1 {
+    font-size: 3em;
+  }
+}
+
+/* Fim da Intro */
+
+/* Sobre */
+.sobre {
+  background: #fff;
+  padding: 60px 0;
+}
+
+blockquote {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+
+blockquote:before {
+  color: #FF6868;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.15em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: #FF6868;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.2em;
+  margin-left: 0.15em;
+  vertical-align: -0.5em;
+}
+
+blockquote p {
+  display: inline;
+  font-style: italic;
+  font-size: 1.25em;
+  color: #0F152C;
+}
+
+cite {
+  display: block;
+  max-width: 300px;
+  text-align: right;
+  margin: 0 auto;
+  padding-right: 7px;
+  color: #0F152C;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Fim do sobre */
+
+/* Posts */
+.posts-bg {
+  width: 100%;
+  background: #0F152C;
+  padding-top: 60px;
+}
+
+.news {
+  margin-bottom: 60px;
+}
+
+.postagens {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: snow;
+  border-radius: 8px;
+}
+
+.postagens h2 {
+  margin-bottom: 10px;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.postagens .data {
+  margin-top: 10px;
+  text-align: right;
+  font-style: italic;
+}
+
+.postagens img {
+  margin-top: 20px;
+  width: 350px;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .postagens .pictures {
+    text-align: center;
+  }
+
+  .postagens .pictures img {
+    width: 200px;
+  }
+}
+
+/* Fim dos posts */
+
+/* Contato */
+.form {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.form .contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+
+.form .contact-form label.error {
+  color: #DE364B;
+  font-weight: bold;
+}
+
+.form .contact-form label.error::before {
+  content: "";
+  background: url(../svg/close.png) no-repeat;
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+.form .contact-form input {
+  display: block;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin: 0 0 15px 0;
+  border: 2px solid #3B3756;
+  border-radius: 4px;
+}
+
+.form .contact-form input.error {
+  border-color: #DE364B;
+  margin-bottom: 0;
+  transition: .3s border linear;
+}
+
+.form .contact-form input::placeholder {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: lightgray;
+}
+
+.form .contact-form textarea {
+  display: block;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #3B3756;
+  border-radius: 4px;
+}
+
+.form .contact-form textarea::placeholder {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: lightgray;
+}
+
+.submit-button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  width: 140px;
+  border: 3px solid #3B3756;
+  border-radius: 4px;
+  background: #3B3756;
+  box-shadow: 5px 5px 0px #8892BF;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #FF6868;
+  border-color: #FF6868;
+  transition: all .4s ease;
+}
+
+/* Fim contato */
+
+
+/* Footer */
+footer {
+  width: 100%;
+  background-image: linear-gradient(to left, #FF6868, #FD8406);
+  padding-top: 40px;
+}
+
+.social {
+  padding-left: 10px;
+  padding-bottom: 40px;
+}
+
+.social h2 {
+  color: #000;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.social h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #000;
+  margin: 6px 0 15px 0;
+}
+
+.social ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social a {
+  display: block;
+  border: 4px solid #000;
+  padding: 8px;
+}
+
+.social a img {
+  width: 32px;
+  height: 32px;
+}
+
+.social a:hover {
+  border-color: #FFF;
+  transition: .4s border ease-in;
+}
+
+.copy {
+  background: #5F6160;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Fim do footer */
