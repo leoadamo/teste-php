@@ -481,6 +481,7 @@ cite {
   box-shadow: 3px 3px 0px #8892BF;
 }
 
+/* Posicionamento do botão no responsivo */
 @media only screen and (max-width: 959px) {
   .submit-button {
     margin-left: 220px;
