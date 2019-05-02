@@ -477,7 +477,7 @@ cite {
 .submit-button:hover {
   background: #FF6868;
   border-color: #FF6868;
-  transition: all .4s ease;
+  transition: all .2s ease-in;
   box-shadow: 3px 3px 0px #8892BF;
 }
 
