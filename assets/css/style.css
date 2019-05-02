@@ -260,16 +260,16 @@ body {
   display: inline-block;
   margin-top: 60px;
   padding: 10px 20px;
-  border: 4px solid #8892BF;
+  border: 4px solid #fff;
   text-transform: uppercase;
-  color: #8892BF;
+  color: #fff;
   font-family: 'Francois One', sans-serif;
   letter-spacing: .2em;
 }
 
 .button a:hover {
-  border-color: white;
-  color: white;
+  border-color: #8892BF;
+  color: #fff;
   transition: all .4s ease-out;
 }
 
@@ -459,6 +459,7 @@ cite {
 .submit-button {
   display: block;
   margin-top: 10px;
+  margin-left: 315px;
   padding: 10px;
   width: 140px;
   border: 3px solid #3B3756;
@@ -477,6 +478,19 @@ cite {
   background: #FF6868;
   border-color: #FF6868;
   transition: all .4s ease;
+  box-shadow: 3px 3px 0px #8892BF;
+}
+
+@media only screen and (max-width: 959px) {
+  .submit-button {
+    margin-left: 220px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .submit-button {
+    margin-left: 155px;
+  }
 }
 
 /* Fim contato */
@@ -495,7 +509,7 @@ footer {
 }
 
 .social h2 {
-  color: #000;
+  color: #fff;
   font-weight: bold;
   font-size: 1em;
   text-transform: uppercase;
@@ -506,7 +520,7 @@ footer {
   display: block;
   width: 60px;
   height: 4px;
-  background-color: #000;
+  background-color: #fff;
   margin: 6px 0 15px 0;
 }
 
@@ -517,7 +531,7 @@ footer {
 
 .social a {
   display: block;
-  border: 4px solid #000;
+  border: 4px solid #fff;
   padding: 8px;
 }
 
@@ -527,15 +541,16 @@ footer {
 }
 
 .social a:hover {
-  border-color: #FFF;
+  border-color: #3B3756;
   transition: .4s border ease-in;
 }
 
 .copy {
-  background: #5F6160;
+  background: #3B3756;
+  font-size: .8em;
   color: #fff;
   text-align: center;
-  padding: 5px 0;
+  padding: 8px 0;
 }
 
 /* Fim do footer */
