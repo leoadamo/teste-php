@@ -8,8 +8,8 @@
     $data = array_reverse($data);
     $data = implode('/',$data );
     return $data;
-  }  
-
+  } 
+  
   // Listar os posts cadastrados no BD  
   function listar($pdo) {
     $sql = "SELECT * FROM posts ORDER BY data DESC";
@@ -38,7 +38,7 @@
 
     if(isset($_REQUEST['buscar']))
       $inicial = $_REQUEST['pesquisa'];
-    
+      
     if($inicial != "") 
       $sqlAux = " WHERE titulo LIKE '$inicial%'";
 
@@ -46,7 +46,7 @@
     $query = $pdo->prepare($sql);
     $query->execute();
     $posts = $query->fetchAll();
-    
+      
     foreach($posts as $post) {  
       $html = '<div class="postagens">
                 <h2>'.$post['titulo'].'</h2>
@@ -59,5 +59,12 @@
               </div>';
       echo utf8_encode($html);
     }
-  } 
+  }
+
+  // Insere os dados provenientes do formulário
+  function insere($pdo, $nome, $sobrenome, $email, $mensagem) {
+      $sql = "INSERT INTO contato VALUES ('$nome', '$sobrenome', '$email', '$mensagem')";
+      $query = $pdo->prepare($sql);
+      $query->execute();
+  }
 ?>
