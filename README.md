@@ -3,7 +3,7 @@
 </p>
 
 # Blog PHP
-<p>Projeto de Blog utilizando conteúdo dinâmico proveniente de uma conexão com banco de dados MySQL, utilizando a linguagem PHP.<p>
+<p>Projeto de Blog utilizando conteúdo dinâmico proveniente de uma conexão com banco de dados MySQL, fazendo uso da linguagem PHP.<p><br>
 
 ## Contribuição
 1. Faça o fork!
@@ -16,4 +16,4 @@
 Versão 1.0 - Criada para atividade avaliativa da disciplina de Lógica de Programação para WEB.
 
 ## Créditos
-&copy; Leonardo Adamoli | [LinkedIn](https://https://www.linkedin.com/in/adamolileonardo/)
+&copy; Leonardo Adamoli | [LinkedIn](https://www.linkedin.com/in/adamolileonardo/)
