@@ -1,4 +1,5 @@
-!['php-logo'](assets/svg/php-logo.png)
+<img width="150px" src="assets/svg/php-logo.png" alt="PHP Logo" style="float: right; margin-top: 15px;">
+<br><br><br>
 
 # Blog PHP
 
