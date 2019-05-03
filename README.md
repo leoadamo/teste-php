@@ -1,5 +1,6 @@
-<img width="150px" src="assets/svg/php-logo.png" alt="PHP Logo" style="float: right; margin-top: 15px;">
-<br><br><br>
+<p align="center">
+  <img src="assets/svg/php-logo.png" width="150px" alt="PHP Logo"/>
+</p>
 
 # Blog PHP
 
