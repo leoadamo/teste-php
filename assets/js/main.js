@@ -1,18 +1,28 @@
 $(document).ready(function () {
+  // Módulo adicional para aceitar apenas letras
+  $.validator.addMethod("lettersonly", function (value, element) {
+    return this.optional(element) || /^[a-z]+$/i.test(value);
+  }, "Letters only please");
+
   // Form validation
   $("#contact-us").validate({
     rules: {
       nome: {
         required: true,
-        rangelength: [3, 15]
+        rangelength: [3, 15],
+        lettersonly: true
       },
       sobrenome: {
         required: true,
+        lettersonly: true,
         rangelength: [3, 25]
       },
       email: {
         required: true,
         email: true
+      },
+      description: {
+        rangelength: [15, 60]
       }
     }
   });
