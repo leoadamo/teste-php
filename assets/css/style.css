@@ -449,6 +449,12 @@ cite {
   border-radius: 4px;
 }
 
+.form .contact-form textarea.error {
+  border-color: #DE364B;
+  margin-bottom: 0;
+  transition: .3s border linear;
+}
+
 .form .contact-form textarea::placeholder {
   font-family: 'Segoe UI', sans-serif;
   font-size: 16px;

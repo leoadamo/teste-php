@@ -1,5 +1,7 @@
 <?php
 
+  include('db-conector.php');
+
   //Arrumar a data
   function data_br($data) {
     //2018-06-26
@@ -62,9 +64,23 @@
   }
 
   // Insere os dados provenientes do formulário
+  if(isset($_REQUEST['form-submit'])) {
+    $nome = $_POST['nome'];
+    $sobrenome = $_POST['sobrenome'];
+    $email = $_POST['email'];
+    $mensagem = $_POST['description'];
+    // Chama a função insere já com as variáveis definidas
+    insere($pdo, $nome, $sobrenome, $email, $mensagem);
+  }
+  
   function insere($pdo, $nome, $sobrenome, $email, $mensagem) {
-      $sql = "INSERT INTO contato VALUES ('$nome', '$sobrenome', '$email', '$mensagem')";
-      $query = $pdo->prepare($sql);
-      $query->execute();
+    $sql = "INSERT INTO contato (nome, sobrenome, email, mensagem) VALUES (:nome, :sobrenome, :email, :mensagem)";
+    $query = $pdo->prepare($sql);
+    $query->bindValue(':nome', $nome);
+    $query->bindValue(':sobrenome', $sobrenome);
+    $query->bindValue(':email', $email);
+    $query->bindValue(':mensagem', $mensagem);
+    $query->execute();
+    header("Location: index.php");
   }
 ?>

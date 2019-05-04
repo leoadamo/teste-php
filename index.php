@@ -1,5 +1,4 @@
 <?php
-    include('db-conector.php');
     include('funcoes.php');
 ?>
 
@@ -89,16 +88,7 @@
             placeholder="seuemailaqui@provedor.com">
           <label for="description">Mensagem: </label><textarea name="description" id="description" cols="50" rows="8"
             placeholder="Insira sua mensagem aqui"></textarea>
-          <button type="submit" name="submit" class="submit-button">Enviar</button>
-          <?php
-            if(isset($_REQUEST['submit'])) {
-              $nome = $_POST['nome'];
-              $sobrenome = $_POST['sobrenome'];
-              $email = $_POST['email'];
-              $mensagem = $_POST['description'];
-              insere($pdo, $nome, $sobrenome, $email, $mensagem);
-            }
-          ?>  
+          <button type="submit" name="form-submit" class="submit-button">Enviar</button>
         </form>
       </div>
     </div>
