@@ -73,6 +73,7 @@
     insere($pdo, $nome, $sobrenome, $email, $mensagem);
   }
   
+  // Executa a query
   function insere($pdo, $nome, $sobrenome, $email, $mensagem) {
     $sql = "INSERT INTO contato (nome, sobrenome, email, mensagem) VALUES (:nome, :sobrenome, :email, :mensagem)";
     $query = $pdo->prepare($sql);
