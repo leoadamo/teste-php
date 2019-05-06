@@ -126,7 +126,8 @@ body {
 
 .nav-bar ul li:nth-child(1),
 .nav-bar ul li:nth-child(2),
-.nav-bar ul li:nth-child(3) {
+.nav-bar ul li:nth-child(3),
+.nav-bar ul li:nth-child(4) {
   padding-right: 8px;
   border-right: 2px solid #3B3756;
 }
@@ -199,9 +200,14 @@ body {
 
   .nav-bar ul li:nth-child(1),
   .nav-bar ul li:nth-child(2),
-  .nav-bar ul li:nth-child(3) {
+  .nav-bar ul li:nth-child(3),
+  .nav-bar ul li:nth-child(4) {
     border: none;
     padding: 0;
+  }
+
+  .nav-bar ul li:nth-child(5) {
+    margin-right: 80px;
   }
 
   .nav-bar ul li a {
