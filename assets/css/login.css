@@ -1,0 +1,52 @@
+body {
+  background: #fff;
+}
+
+/* Estilos Gerais */
+
+.title {
+  text-align: center;
+}
+
+/* Menu */
+
+.menu-logo {
+  text-align: center;
+}
+
+.nav-bar ul li:nth-child(1) {
+  border: none;
+}
+
+/* Menu Responsivo */
+@media only screen and (max-width: 767px) {
+  .nav-bar ul {
+    text-align: center;
+  }
+}
+
+/* Form de login */
+
+.form {
+  width: 350px;
+  margin: 0 auto 40px auto;
+}
+
+.submit-button {
+  margin: 10px auto;
+  box-shadow: none;
+}
+
+.submit-button:hover {
+  box-shadow: none;
+  background: #FF6868;
+  border-color: #FF6868;
+}
+
+/* Form responsivo */
+
+@media only screen and (max-width: 767px) {
+  .form {
+    width: 80%;
+  }
+}
