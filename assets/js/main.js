@@ -27,6 +27,20 @@ $(document).ready(function () {
     }
   });
 
+  $("#register").validate({
+    rules: {
+      usuario: {
+        required: true,
+        rangelength: [3, 15],
+        lettersonly: true
+      },
+      senha: {
+        required: true,
+        rangelength: [4, 8]
+      }
+    }
+  });
+
   // Background slider
   $("#bg-slider").vegas({
     slides: [{

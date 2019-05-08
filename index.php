@@ -30,7 +30,7 @@
           <li><a href="#posts">Postagens</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#contact">Contato</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="login.php">Login</a></li>
         </ul>
       </nav>
       <form action="index.php" method="GET" class="search-form grid-16">
