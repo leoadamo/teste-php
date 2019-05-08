@@ -1,7 +1,3 @@
-<?php
-    @include('sessao.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +27,7 @@
       <form id="register" action="sessao.php" class="contact-form" method="POST">
         <label for="nome">Usuário: </label><input type="text" name="usuario" id="usuario" placeholder="Usuário">
         <label for="sobrenome">Senha: </label><input type="password" name="senha" id="senha" placeholder="Senha">
-        <button type="submit" name="form-submit" class="submit-button">Enviar</button>
+        <button type="submit" name="login" class="submit-button">Login</button>
       </form>
     </div>
   </section>
