@@ -6,6 +6,7 @@ body {
 
 .title {
   text-align: center;
+  color: #fff;
 }
 
 /* Menu */
@@ -28,11 +29,18 @@ body {
 /* Form de login */
 
 .form {
+  background: #0F152C;
+  color: #fff;
   width: 350px;
-  margin: 0 auto 40px auto;
+  padding: 30px;
+  margin: 40px auto 40px auto;
+  border-radius: 6px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, .8);
 }
 
 .submit-button {
+  background: #8892bf;
+  border-color: #8892bf;
   margin: 10px auto;
   box-shadow: none;
 }
