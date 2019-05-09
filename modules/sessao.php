@@ -1,5 +1,5 @@
 <?php
-  include("db-conector.php");
+  include("../modules/db-conector.php");
   session_start();
 
   if(isset($_REQUEST['login'])) {
@@ -13,15 +13,15 @@
 
     if(count($result) > 0) {
       $_SESSION['usuario'] = $usuario;
-      header("location: index.php");
+      header("location: ../index.php");
     }else {
-      header("location: login.php");
+      header("location: ../pages/login.php");
     }
   }
 
   if($_REQUEST['logout'] == 'sim') {
     session_destroy();
-    header("location: index.php");
+    header("location: ../index.php");
   }
 
 

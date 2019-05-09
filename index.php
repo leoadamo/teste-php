@@ -1,5 +1,5 @@
 <?php
-    include('funcoes.php');
+    include('functions/funcoes.php');
 ?>
 
 <!DOCTYPE html>
@@ -22,9 +22,9 @@
   <?php
     session_start();
     if(isset($_SESSION['usuario'])) {
-      include('logout-header.php');
+      include('pages/logout-header.php');
     }else {
-      include('login-header.php');
+      include('pages/login-header.php');
     }
   ?>
 

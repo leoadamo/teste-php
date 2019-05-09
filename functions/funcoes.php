@@ -1,6 +1,6 @@
 <?php
 
-  include('db-conector.php');
+  include('./modules/db-conector.php');
 
   //Arrumar a data
   function data_br($data) {
