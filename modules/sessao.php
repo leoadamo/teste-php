@@ -1,4 +1,6 @@
 <?php
+
+  // conecta ao DB
   include("db-conector.php");
   session_start();
 
