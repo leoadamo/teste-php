@@ -1,5 +1,5 @@
 <?php
-  include("../modules/db-conector.php");
+  include("db-conector.php");
   session_start();
 
   if(isset($_REQUEST['login'])) {

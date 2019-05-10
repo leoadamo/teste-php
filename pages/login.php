@@ -23,7 +23,7 @@
 
   <section id="login">
     <div class="form">
-      <h1 class="title">Faça seu Login</h1>
+      <h1 class="title"><span>&#126;</span>Faça seu Login<span>&#46;</span></h1>
       <form id="register" action="../modules/sessao.php" class="contact-form" method="POST">
         <label for="nome">Usuário: </label><input type="text" name="usuario" id="usuario" placeholder="Usuário">
         <label for="sobrenome">Senha: </label><input type="password" name="senha" id="senha" placeholder="Senha">

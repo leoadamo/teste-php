@@ -39,16 +39,16 @@ body {
 }
 
 .submit-button {
-  background: #8892bf;
-  border-color: #8892bf;
+  background: #FF6868;
+  border-color: #FF6868;
   margin: 10px auto;
   box-shadow: none;
 }
 
 .submit-button:hover {
   box-shadow: none;
-  background: #FF6868;
-  border-color: #FF6868;
+  background: #8892bf;
+  border-color: #8892bf;
 }
 
 /* Form responsivo */

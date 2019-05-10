@@ -185,7 +185,7 @@ body {
 
 .search-form button:hover {
   background: #FF6868;
-  transition: .4s all ease-out;
+  transition: all .2s ease-in;
 }
 
 /* Menu Responsivo */
@@ -276,7 +276,7 @@ body {
 .button a:hover {
   border-color: #8892BF;
   color: #fff;
-  transition: all .4s ease-out;
+  transition: all .2s ease-in;
 }
 
 /* Intro responsivo */
@@ -353,7 +353,7 @@ cite {
 }
 
 .news {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .postagens {
@@ -382,6 +382,27 @@ cite {
   height: auto;
 }
 
+.buttons {
+  text-align: right;
+}
+
+.submit-button.query {
+  background: none;
+  border-color: #FFf;
+  color: #fff;
+  margin: 20px 5px 0 0;
+  display: inline-block;
+  box-shadow: none;
+}
+
+.submit-button.query:nth-child(3) {
+  margin-right: 0;
+}
+
+.submit-button.query:hover {
+  box-shadow: none;
+}
+
 @media only screen and (max-width: 767px) {
   .postagens .pictures {
     text-align: center;
@@ -389,6 +410,14 @@ cite {
 
   .postagens .pictures img {
     width: 200px;
+  }
+
+  .buttons {
+    text-align: center;
+  }
+
+  .submit-button.query:nth-child(3) {
+    margin-top: 10px;
   }
 }
 
@@ -555,7 +584,7 @@ footer {
 
 .social a:hover {
   border-color: #3B3756;
-  transition: .4s border ease-in;
+  transition: border .2s ease-in;
 }
 
 .copy {

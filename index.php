@@ -1,5 +1,6 @@
 <?php
-    include('functions/funcoes.php');
+  session_start();
+  include('functions/funcoes.php');
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,6 @@
 
 <body>
   <?php
-    session_start();
     if(isset($_SESSION['usuario'])) {
       include('pages/logout-header.php');
     }else {
@@ -41,7 +41,7 @@
   <section id="sobre" class="sobre">
     <div class="container">
       <div class="grid-16">
-        <h1 class="title blue"><span>/</span> Sobre Nós</h1>
+        <h1 class="title blue"><span>&#36;</span>Sobre Nós</h1>
       </div>
       <blockquote>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dolorem eius consequatur, neque nulla eos
@@ -54,12 +54,15 @@
   <section id="posts" class="posts-bg">
     <div class="container">
       <div class="news grid-16">
-        <h1 class="title"><span>/</span> Postagens</h1>
+        <h1 class="title">Postagens<span>&#40;&#41;</span></h1>
         <?php 
           if(isset($_REQUEST['buscar']))
             listarInicial($pdo);
           else
-            listar($pdo);  
+            listar($pdo); 
+          if(isset($_SESSION['usuario'])) {
+            mostraBotao();
+          }   
         ?>
       </div>
     </div>
@@ -68,8 +71,8 @@
   <section id="contact">
     <div class="container">
       <div class="form grid-8">
-        <h1 class="title blue"><span>/</span> Contato</h1>
-        <form id="contact-us" action="funcoes.php" class="contact-form" method="POST">
+        <h1 class="title blue"><span>&#64;</span>Contato</h1>
+        <form id="contact-us" action="functions/funcoes.php" class="contact-form" method="POST">
           <label for="nome">Nome: </label><input type="text" name="nome" id="nome" placeholder="Nome">
           <label for="sobrenome">Sobrenome: </label><input type="text" name="sobrenome" id="sobrenome"
             placeholder="Sobrenome">
