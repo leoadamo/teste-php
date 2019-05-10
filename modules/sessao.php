@@ -1,8 +1,8 @@
 <?php
-
+  session_start();
+  
   // conecta ao DB
   include("db-conector.php");
-  session_start();
 
   if(isset($_REQUEST['login'])) {
     $usuario = $_REQUEST['usuario'];
