@@ -404,6 +404,7 @@ cite {
   padding: 8px;
   background: #15B78F;
   border-color: #15B78F;
+  margin-right: 0px;
 }
 
 .submit-button.query.inserir span {
@@ -416,7 +417,7 @@ cite {
   transform: scale(1.1);
 }
 
-.submit-button.query:nth-child(3) {
+.submit-button.query:nth-child(2) {
   margin-right: 0;
 }
 
