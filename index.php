@@ -54,15 +54,17 @@
   <section id="posts" class="posts-bg">
     <div class="container">
       <div class="news grid-16">
-        <h1 class="title">Postagens<span>&#40;&#41;</span></h1>
         <?php 
+          if(isset($_SESSION['usuario'])) {
+            botaoInsere();
+          } 
+        ?>  
+        <h1 class="title">Postagens<span>&#40;&#41;</span></h1>
+        <?php
           if(isset($_REQUEST['buscar']))
             listarInicial($pdo);
           else
             listar($pdo); 
-          if(isset($_SESSION['usuario'])) {
-            mostraBotao();
-          }   
         ?>
       </div>
     </div>

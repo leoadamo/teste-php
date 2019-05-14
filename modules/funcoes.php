@@ -31,6 +31,9 @@
                 <p class="data"><strong>Data da postagem:</strong> '.data_br($post['data']).'</p>
               </div>';
       echo utf8_encode($html);
+      if(isset($_SESSION['usuario'])) {
+        mostraBotoes();
+      }
     }
   }
 
@@ -61,8 +64,11 @@
                 <p class="data"><strong>Data da postagem:</strong> '.data_br($post['data']).'</p>
               </div>';
       echo utf8_encode($html);
+      if(isset($_SESSION['usuario'])) {
+        mostraBotoes();
+      }
     }
-  }
+  }  
 
   // Insere os dados provenientes do formulário
   if(isset($_REQUEST['form-submit'])) {
@@ -86,13 +92,23 @@
     header("Location: ../index.php");
   }
 
-  function mostraBotao() {
+  function mostraBotoes() {
     $html = '<div class="buttons">
-              <button type="submit" name="form-submit" value="inserir" class="submit-button query">Inserir</button>
-              <button type="submit" name="form-submit" value="alterar" class="submit-button query">Alterar</button>
-              <button type="submit" name="form-submit" value="excluir" class="submit-button query">Excluir</button>
+              <form method="POST">
+                <button type="submit" name="atualiza" value="alterar" class="submit-button query">Alterar</button>
+                <button type="submit" name="exclui" value="excluir" class="submit-button query">Excluir</button>
+              </form>
             </div>';
 
     echo $html;
   }
+
+  function botaoInsere() {
+    $html = '<div class="insere-button">
+              <form method="POST" action="../teste-php/pages/novo_post.php">
+                <button type="submit" name="insere" value="inserir" class="submit-button query inserir"><span>&#43;</span> Novo Post</button>
+              </form>  
+            </div>';
+    echo ($html);        
+  }  
 ?>

@@ -386,13 +386,34 @@ cite {
   text-align: right;
 }
 
+.insere-button {
+  text-align: right;
+}
+
 .submit-button.query {
   background: none;
   border-color: #FFf;
   color: #fff;
-  margin: 20px 5px 0 0;
+  margin: 0 5px 40px 0;
   display: inline-block;
   box-shadow: none;
+}
+
+.submit-button.query.inserir {
+  margin-bottom: 40px;
+  padding: 8px;
+  background: #15B78F;
+  border-color: #15B78F;
+}
+
+.submit-button.query.inserir span {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.submit-button.query.inserir:hover {
+  transform: scale(1.1);
 }
 
 .submit-button.query:nth-child(3) {
@@ -418,6 +439,11 @@ cite {
 
   .submit-button.query:nth-child(3) {
     margin-top: 10px;
+  }
+
+  .insere-button {
+    text-align: center;
+    margin-bottom: 40px;
   }
 }
 
