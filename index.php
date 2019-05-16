@@ -74,7 +74,7 @@
     <div class="container">
       <div class="form grid-8">
         <h1 class="title blue"><span>&#64;</span>Contato</h1>
-        <form id="contact-us" action="modules/funcoes.php" class="contact-form" method="POST">
+        <form id="contact-us" action="modules/funcoes.php" class="general-form" method="POST">
           <label for="nome">Nome: </label><input type="text" name="nome" id="nome" placeholder="Nome">
           <label for="sobrenome">Sobrenome: </label><input type="text" name="sobrenome" id="sobrenome"
             placeholder="Sobrenome">

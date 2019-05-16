@@ -1,0 +1,20 @@
+/* Menu */
+.menu-logo {
+  text-align: center;
+}
+
+/* Form */
+.form-post {
+  padding-top: 40px;
+}
+
+.form-post h1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.form {
+  padding: 0;
+}
+
+/* Fim do form */

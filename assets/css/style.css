@@ -401,7 +401,7 @@ cite {
 
 .submit-button.query.inserir {
   margin-bottom: 40px;
-  padding: 8px;
+  padding: 10px;
   background: #15B78F;
   border-color: #15B78F;
   margin-right: 0px;
@@ -456,19 +456,19 @@ cite {
   margin-bottom: 40px;
 }
 
-.form .contact-form label {
+.form .general-form label {
   display: block;
   margin-bottom: 5px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 16px;
 }
 
-.form .contact-form label.error {
+.form .general-form label.error {
   color: #DE364B;
   font-weight: bold;
 }
 
-.form .contact-form label.error::before {
+.form .general-form label.error::before {
   content: "";
   background: url(../svg/close.png) no-repeat;
   display: inline-block;
@@ -477,7 +477,7 @@ cite {
   height: 16px;
 }
 
-.form .contact-form input {
+.form .general-form input {
   display: block;
   font-family: 'Segoe UI', sans-serif;
   font-size: 16px;
@@ -488,20 +488,20 @@ cite {
   border-radius: 4px;
 }
 
-.form .contact-form input.error {
+.form .general-form input.error {
   border-color: #DE364B;
   margin-bottom: 0;
   transition: .3s border linear;
 }
 
-.form .contact-form input::placeholder {
+.form .general-form input::placeholder {
   font-family: 'Segoe UI', sans-serif;
   font-size: 16px;
   font-style: italic;
   color: lightgray;
 }
 
-.form .contact-form textarea {
+.form .general-form textarea {
   display: block;
   font-family: 'Segoe UI', sans-serif;
   font-size: 16px;
@@ -511,13 +511,13 @@ cite {
   border-radius: 4px;
 }
 
-.form .contact-form textarea.error {
+.form .general-form textarea.error {
   border-color: #DE364B;
   margin-bottom: 0;
   transition: .3s border linear;
 }
 
-.form .contact-form textarea::placeholder {
+.form .general-form textarea::placeholder {
   font-family: 'Segoe UI', sans-serif;
   font-size: 16px;
   font-style: italic;

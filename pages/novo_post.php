@@ -9,9 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/grid.css" />
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="../assets/css/login.css" />
+  <link rel="stylesheet" href="../assets/css/cadastro.css" />
   <link rel="icon" type="img/png" href="../assets/svg/fire.png">
-  <title>Blog From Hell - Login</title>
+  <title>Blog From Hell - Novo Post</title>
 </head>
 
 <body>
@@ -21,16 +21,18 @@
     </div>
   </header>
 
-  <section id="login">
-    <div class="form">
-      <h1 class="title"><span>&#126;</span>Faça seu Login<span>&#46;</span></h1>
-      <form id="register" action="../modules/sessao.php" class="contact-form" method="POST">
-        <label for="nome">Usuário: </label><input type="text" name="usuario" id="usuario" placeholder="Usuário">
-        <label for="sobrenome">Senha: </label><input type="password" name="senha" id="senha" placeholder="Senha">
-        <button type="submit" name="login" class="submit-button">Login</button>
+  <div class="container form-post">
+    <h1 class="title blue"><span>&#62;</span>Insira as informações do post<span>&#46;</span></h1>
+    <div class="form grid-8">
+      <form id="new_post" action="../modules/funcoes.php" class="general-form" method="POST">
+        <label for="titulo">Título:</label><input type="text" name="titulo" id="titulo" placeholder="Título da Postagem">
+        <label for="resumo">Resumo: </label><input type="text" name="resumo" id="resumo" placeholder="Resumo do post...">
+        <label for="postagem">Postagem: </label><textarea name="postagem" id="postagem" cols="50" rows="8"
+            placeholder="Insira o post aqui."></textarea>
+        <button type="submit" name="salvar" value="salvar" class="submit-button">Salvar</button>
       </form>
-    </div>
-  </section>
+    </div>  
+  </div>
 
   <footer>
     <div class="social container">

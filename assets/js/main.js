@@ -5,6 +5,20 @@ $(document).ready(function () {
   }, "Letters only please");
 
   // Form validation
+  $('#new_post').validate({
+    rules: {
+      titulo: {
+        required: true
+      },
+      resumo: {
+        required: true
+      },
+      postagem: {
+        required: true
+      }
+    }
+  });
+
   $("#contact-us").validate({
     rules: {
       nome: {

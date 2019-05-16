@@ -106,7 +106,7 @@
   function botaoInsere() {
     $html = '<div class="insere-button">
               <form method="POST" action="../teste-php/pages/novo_post.php">
-                <button type="submit" name="insere" value="inserir" class="submit-button query inserir"><span>&#43;</span> Novo Post</button>
+                <button type="submit" name="insere" value="inserir" class="submit-button query inserir">Novo Post</button>
               </form>  
             </div>';
     echo ($html);        
