@@ -17,4 +17,12 @@
   padding: 0;
 }
 
+.general-form textarea {
+  margin-bottom: 15px;
+}
+
+.general-form input#imagem {
+  border: none;
+}
+
 /* Fim do form */

@@ -24,11 +24,13 @@
   <div class="container form-post">
     <h1 class="title blue"><span>&#62;</span>Insira as informações do post<span>&#46;</span></h1>
     <div class="form grid-8">
-      <form id="new_post" action="../modules/funcoes.php" class="general-form" method="POST">
+      <form id="new_post" action="../modules/funcoes.php" class="general-form" method="POST" enctype="multipart/form-data">
         <label for="titulo">Título:</label><input type="text" name="titulo" id="titulo" placeholder="Título da Postagem">
         <label for="resumo">Resumo: </label><input type="text" name="resumo" id="resumo" placeholder="Resumo do post...">
         <label for="postagem">Postagem: </label><textarea name="postagem" id="postagem" cols="50" rows="8"
             placeholder="Insira o post aqui."></textarea>
+        <label for="imagem">Imagem: </label><input type="file" name="imagem" id="imagem">
+        <label for="posicao">Posição: </label><input type="text" name="posicao" id="posicao" placeholder="Insira onde a imagem será posicionada.">
         <button type="submit" name="salvar" value="salvar" class="submit-button">Salvar</button>
       </form>
     </div>  

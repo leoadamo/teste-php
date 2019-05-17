@@ -15,6 +15,12 @@ $(document).ready(function () {
       },
       postagem: {
         required: true
+      },
+      imagem: {
+        required: true,
+      },
+      posicao: {
+        required: true
       }
     }
   });

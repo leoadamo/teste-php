@@ -92,6 +92,38 @@
     header("Location: ../index.php");
   }
 
+  // Insere os dados preenchidos no formulário de cadastro de postagens
+  if(isset($_REQUEST['salvar'])) {
+    $titulo = $_POST['titulo'];
+    $resumo = $_POST['resumo'];
+    $postagem = $_POST['postagem'];
+    $imagem = $_FILES['imagem'];
+    $posicao = $_POST['posicao'];
+    $data = date('Y-m-d');
+ 
+    $img_nome = $imagem['name'];
+    $temp_file = $imagem['tmp_name'];
+    $caminho = '../assets/img/'.$img_nome;
+    move_uploaded_file($temp_file, $caminho);
+    
+    // Chamando a função que executará a query de cadastro de postagem
+    criaPost($pdo, $titulo, $resumo, $postagem, $img_nome, $posicao, $data);
+  }
+
+  // Função criaPost
+  function criaPost($pdo, $titulo, $resumo, $postagem, $img_nome, $posicao, $data) {
+    $sql = "INSERT INTO posts (titulo, resumo, texto, imagem, posicao, data) VALUES (:titulo, :resumo, :postagem, :imagem, :posicao, :dt_post)";
+    $query = $pdo->prepare($sql);
+    $query->bindValue(':titulo', $titulo);
+    $query->bindValue(':resumo', $resumo);
+    $query->bindValue(':postagem', $postagem);
+    $query->bindValue(':imagem', $img_nome);
+    $query->bindValue(':posicao', $posicao);
+    $query->bindValue(':dt_post', $data);
+    $query->execute();
+    header('Location: ../index.php');
+  }
+
   function mostraBotoes() {
     $html = '<div class="buttons">
               <form method="POST">
@@ -99,7 +131,6 @@
                 <button type="submit" name="exclui" value="excluir" class="submit-button query">Excluir</button>
               </form>
             </div>';
-
     echo $html;
   }
 
