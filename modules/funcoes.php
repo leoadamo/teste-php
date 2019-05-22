@@ -209,10 +209,10 @@
     
 
     $codigo = $posts['cdpost'];
-    $titulo = $posts['titulo'];
-    $resumo = $posts['resumo'];
-    $texto = $posts['texto'];
-    $posicao = $posts['posicao'];
+    $titulo = utf8_encode($posts['titulo']);
+    $resumo = utf8_encode($posts['resumo']);
+    $texto = utf8_encode($posts['texto']);
+    $posicao = utf8_encode($posts['posicao']);
   }
 
   if(isset($_REQUEST['edita'])) {
