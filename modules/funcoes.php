@@ -32,7 +32,7 @@
                   </div>    
                   <p class="data"><strong>Data da postagem:</strong> '.data_br($post['data']).'</p>
                 </div>';
-        echo $html;
+        echo utf8_encode($html);
         if(isset($_SESSION['usuario'])) {
           mostraExclui($id);
           mostraAltera($id);
@@ -71,7 +71,7 @@
                   </div> 
                   <p class="data"><strong>Data da postagem:</strong> '.data_br($post['data']).'</p>
                 </div>';
-        echo $html;
+        echo utf8_encode($html);
         if(isset($_SESSION['usuario'])) {
           mostraExclui($id);
           mostraAltera($id);
@@ -84,10 +84,10 @@
 
   // Insere os dados provenientes do formulário de contato
   if(isset($_REQUEST['form-submit'])) {
-    $nome = $_POST['nome'];
-    $sobrenome = $_POST['sobrenome'];
-    $email = $_POST['email'];
-    $mensagem = $_POST['description'];
+    $nome = utf8_decode($_POST['nome']);
+    $sobrenome = utf8_decode($_POST['sobrenome']);
+    $email = utf8_decode($_POST['email']);
+    $mensagem = utf8_decode($_POST['description']);
     // Chama a função insere já com as variáveis definidas
     insere($pdo, $nome, $sobrenome, $email, $mensagem);
   }
@@ -110,11 +110,11 @@
 
   // Insere os dados preenchidos no formulário de cadastro de postagens
   if(isset($_REQUEST['salvar'])) {
-    $titulo = $_POST['titulo'];
-    $resumo = $_POST['resumo'];
-    $postagem = $_POST['postagem'];
+    $titulo = utf8_decode($_POST['titulo']);
+    $resumo = utf8_decode($_POST['resumo']);
+    $postagem = utf8_decode($_POST['postagem']);
     $imagem = $_FILES['imagem'];
-    $posicao = $_POST['posicao'];
+    $posicao = utf8_decode($_POST['posicao']);
     $data = date('Y-m-d');
  
     $img_nome = $imagem['name'];
@@ -216,12 +216,12 @@
   }
 
   if(isset($_REQUEST['edita'])) {
-    $codigo = $_REQUEST['codigo'];
-    $titulo = $_REQUEST['titulo'];
-    $resumo = $_REQUEST['resumo'];
-    $texto = $_REQUEST['postagem'];
+    $codigo = utf8_decode($_REQUEST['codigo']);
+    $titulo = utf8_decode($_REQUEST['titulo']);
+    $resumo = utf8_decode($_REQUEST['resumo']);
+    $texto = utf8_decode($_REQUEST['postagem']);
     $imagem = $_FILES['imagem'];
-    $posicao = $_REQUEST['posicao'];
+    $posicao = utf8_decode($_REQUEST['posicao']);
 
     $img_nome = $imagem['name'];
     $temp_file = $imagem['tmp_name'];

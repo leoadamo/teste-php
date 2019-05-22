@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 22-Maio-2019 às 15:58
+-- Generation Time: 22-Maio-2019 às 16:40
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
@@ -57,8 +57,8 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`cdpost`, `titulo`, `resumo`, `texto`, `imagem`, `posicao`, `data`) VALUES
-(6, 'Echo', 'Breve descriÃ§Ã£o sobre o comando ', 'A funÃ§Ã£o echo Ã© a instruÃ§Ã£o que envia para a saÃ­da qualquer informaÃ§Ã£o, podendo conter texto, nÃºmeros ou variÃ¡veis.', 'php-variable.png', 'right', '2019-05-21'),
-(7, 'FunÃ§Ãµes em PHP', 'Entendendo como funcionam as funÃ§Ãµes em PHP', 'A declaraÃ§Ã£o de funÃ§Ãµes no PHP, bem como na maioria das linguagens de programaÃ§Ã£o, Ã© feita a partir da palavra reservada function, seguida do nome da funÃ§Ã£o e de sua lista de argumentos, enquanto o corpo da funÃ§Ã£o Ã© delimitado por chaves ({â€¦}), entre as quais deve ficar todo o conjunto de instruÃ§Ãµes a ser executado quando a funÃ§Ã£o for invocada.', 'funcoes-em-php.jpg', 'left', '2019-05-22');
+(13, 'Funções em PHP', 'Utilizando as funções no PHP', 'Funções podem ser definidas blocos de código com um objetivo específico, identificados por um nome através do qual pode ser referenciado á partir de várias partes do código. Essa é uma das principais técnicas utilizadas para garantir a reutilização de código, tornando a programação mais prática e o código mais ?limpo? e organizado.', 'funcoes-em-php.jpg', 'left', '2019-05-22'),
+(14, 'Echo', 'Printando elementos no PHP', 'Exibe todos os parâmetros.\r\n\r\necho não é uma função atualmente (construtor da linguagem) então não é obrigatório usar parênteses. echo (diferente de outro construtor da linguagem) não se comporta como uma função, então ele nem sempre é usado no contexto de uma função. Sendo assim, se você quer passar mais de um parâmetro para echo, os parâmetros não precisam estar entre parênteses.', 'php-variable.png', 'right', '2019-05-22');
 
 -- --------------------------------------------------------
 
@@ -114,7 +114,7 @@ ALTER TABLE `contato`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `cdpost` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `cdpost` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `user`
 --
