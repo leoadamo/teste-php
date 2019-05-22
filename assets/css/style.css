@@ -383,7 +383,7 @@ cite {
 }
 
 .buttons {
-  text-align: right;
+  display: inline-block;
 }
 
 .insere-button {
@@ -397,6 +397,8 @@ cite {
   margin: 0 5px 40px 0;
   display: inline-block;
   box-shadow: none;
+  text-align: center;
+  font-size: .8em;
 }
 
 .submit-button.query.inserir {
@@ -435,7 +437,7 @@ cite {
   }
 
   .buttons {
-    text-align: center;
+    margin-left: 5px;
   }
 
   .submit-button.query:nth-child(3) {
